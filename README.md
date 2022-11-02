@@ -69,7 +69,7 @@ $$
 
 The right hand sides of these equations sort of form a matrix, if you squint a bit.
 
-So by finding the matrix of coefficients $\bold{S}$ which correspond to the polynomial expansion of each falling factorial up to $x^{\underline{m}}$ and then, most importantly, by finding its' inverse $\bold{S^{-1}}$, we can do this:
+So by finding the matrix of coefficients $S$ which correspond to the polynomial expansion of each falling factorial up to $x^{\underline{m}}$ and then, most importantly, by finding its' inverse $S^{-1}$, we can do this:
 
 $$
   \begin{align}
@@ -79,7 +79,7 @@ $$
            \vdots \\
            b_{m} \\
            b_{m + 1}
-    \end{bmatrix} &= \bold{S^{-1}}(m + 1)
+    \end{bmatrix} &= S^{-1}(m + 1)
         \begin{bmatrix}
            a_{0} \\
            a_{1} \\
@@ -90,7 +90,7 @@ $$
   \end{align}
 $$
 
-We added a zero to the bottom of the polynomial vector and took $\bold{S}(m + 1)$ because all exponents will be shifted up later (try to see why from $(1)$).
+We added a zero to the bottom of the polynomial vector and took $S(m + 1)$ because all exponents will be shifted up later (try to see why from $(1)$).
 
 The only thing left now is to figure out how these coefficients in the expansions $(2)$ of $x^{\underline{m}}$ are made. They are [Stirling numbers of the first kind][3], which are in fact defined as the coefficients in the polynomial expansion of falling factorials (no surprise there):
 
@@ -112,10 +112,10 @@ $$
 
 $$
 
-Finally, we have $\bold{S}$:
+Finally, we have $S$:
 
 $$
-\bold{S}(m + 1) = \begin{bmatrix} 
+S(m + 1) = \begin{bmatrix} 
     s(0, 0) & \dots  & s(0, m + 1) \\
     \vdots & \ddots & \vdots \\
     s(m + 1, 0) & \dots  & s(m + 1, m + 1) 
@@ -131,7 +131,7 @@ $$
            a_{1}' \\
            \vdots \\
            a_{m + 1}'
-    \end{bmatrix} &= \bold{S}(m + 1)
+    \end{bmatrix} &= S(m + 1)
         \begin{bmatrix}
            b_{0} \\
            b_{1} \\
