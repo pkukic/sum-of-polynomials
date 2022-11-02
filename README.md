@@ -72,7 +72,6 @@ The right hand sides of these equations sort of form a matrix, if you squint a b
 So by finding the matrix of coefficients $S$ which correspond to the polynomial expansion of each falling factorial up to $x^{\underline{m}}$ and then, most importantly, by finding its' inverse $S^{-1}$, we can do this:
 
 ```math
-  \tag{1}
   \begin{align}
     \begin{bmatrix}
            b_{0} \\
@@ -89,6 +88,7 @@ So by finding the matrix of coefficients $S$ which correspond to the polynomial 
            0
     \end{bmatrix}
   \end{align}
+  \tag{1}
 ```
 
 We added a zero to the bottom of the polynomial vector and took $S(m + 1)$ because all exponents will be shifted up later (try to see why from ??).
