@@ -5,7 +5,7 @@
 Let's say that, for any reason whatsoever, you're interested in finding the sum:
 
 ```math
-\sum_{0}^{n-1} p(x)
+\sum_{x=0}^{n-1} p(x)
 ```
 
 where $p(x)$ is some polynomial of degree $m$. 
@@ -21,10 +21,10 @@ But what if you could find a new polynomial:
 such that: 
 
 ```math
-    q(n) = \sum_{0}^{n-1} p(x)
+    q(n) = \sum_{x=0}^{n-1} p(x)
 ```
 
-for every integer $n$ and polynomial $p$?
+for every integer $n$ and polynomial $p$? That way you could have this sum available to you in $O(1)$ time every time you want to evaluate it.
 
 ## Solution
 
