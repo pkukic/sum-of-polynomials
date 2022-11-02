@@ -72,6 +72,7 @@ The right hand sides of these equations sort of form a matrix, if you squint a b
 So by finding the matrix of coefficients $S$ which correspond to the polynomial expansion of each falling factorial up to $x^{\underline{m}}$ and then, most importantly, by finding its' inverse $S^{-1}$, we can do this:
 
 ```math
+  \tag{1}
   \begin{align}
     \begin{bmatrix}
            b_{0} \\
@@ -124,6 +125,7 @@ S(m + 1) = \begin{bmatrix}
 And we can get $q(n)$ by applying the transformation inverse to $(3)$:
 
 ```math
+  \begin
   \begin{align}
     \begin{bmatrix}
            a_{0}' \\
