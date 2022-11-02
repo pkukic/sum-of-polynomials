@@ -91,7 +91,7 @@ So by finding the matrix of coefficients $S$ which correspond to the polynomial 
   \tag{1}
 ```
 
-We added a zero to the bottom of the polynomial vector and took $S(m + 1)$ because all exponents will be shifted up later (try to see why from ??).
+We added a zero to the bottom of the polynomial vector and took $S(m + 1)$ because all exponents will be shifted up later (try to see why from $(1)$ ).
 
 The only thing left now is to figure out how these coefficients in the expansions ?? of $x^{\underline{m}}$ are made. They are [Stirling numbers of the first kind][3], which are in fact defined as the coefficients in the polynomial expansion of falling factorials (no surprise there):
 
