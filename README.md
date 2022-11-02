@@ -41,6 +41,7 @@ It turns out there is a $O(m^2)$ solution to this problem, and it's based on usi
 \begin{equation}{
 \sum_{x = 0}^{n-1} x^{\underline{k}} = \frac{1}{k + 1} n^{\underline{k + 1}}
 }\end{equation}
+\tag{1}
 ```
 
 
@@ -65,6 +66,7 @@ This can be done by noting that every **falling factorial** has its' **polynomia
 \begin{align}
 {\displaystyle {\begin{array}{rll}(x)_{0}&&=1\\(x)_{1}&&=x\\(x)_{2}&=x(x-1)&=x^{2}-x\\(x)_{3}&=x(x-1)(x-2)&=x^{3}-3x^{2}+2x\\(x)_{4}&=x(x-1)(x-2)(x-3)&=x^{4}-6x^{3}+11x^{2}-6x\end{array}}}
 \end{align}
+\tag{2}
 ```
 
 The right hand sides of these equations sort of form a matrix, if you squint a bit.
@@ -88,12 +90,12 @@ So by finding the matrix of coefficients $S$ which correspond to the polynomial 
            0
     \end{bmatrix}
   \end{align}
-  \tag{1}
+  \tag{3}
 ```
 
 We added a zero to the bottom of the polynomial vector and took $S(m + 1)$ because all exponents will be shifted up later (try to see why from $(1)$ ).
 
-The only thing left now is to figure out how these coefficients in the expansions ?? of $x^{\underline{m}}$ are made. They are [Stirling numbers of the first kind][3], which are in fact defined as the coefficients in the polynomial expansion of falling factorials (no surprise there):
+The only thing left now is to figure out how these coefficients in the expansions $(2)$ of $x^{\underline{m}}$ are made. They are [Stirling numbers of the first kind][3], which are in fact defined as the coefficients in the polynomial expansion of falling factorials (no surprise there):
 
 ```math
 (x)_m = \sum_{k=0}^m s(m,k) x^k
@@ -122,7 +124,7 @@ S(m + 1) = \begin{bmatrix}
     \end{bmatrix} ^ \top
 ```
 
-And we can get $q(n)$ by applying the transformation inverse to ??:
+And we can get $q(n)$ by applying the transformation inverse to $(3)$:
 
 ```math
   \begin{align}
