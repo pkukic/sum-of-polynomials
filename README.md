@@ -125,7 +125,6 @@ S(m + 1) = \begin{bmatrix}
 And we can get $q(n)$ by applying the transformation inverse to ??:
 
 ```math
-  \begin
   \begin{align}
     \begin{bmatrix}
            a_{0}' \\
