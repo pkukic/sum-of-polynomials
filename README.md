@@ -114,13 +114,13 @@ $$
 
 Finally, we have $S$:
 
-$$
+```math
 S(m + 1) = \begin{bmatrix} 
     s(0, 0) & \dots  & s(0, m + 1) \\
     \vdots & \ddots & \vdots \\
     s(m + 1, 0) & \dots  & s(m + 1, m + 1) 
     \end{bmatrix} ^ \top
-$$
+```
 
 And we can get $q(n)$ by applying the transformation inverse to $(3)$:
 
