@@ -66,7 +66,6 @@ This can be done by noting that every **falling factorial** has its' **polynomia
 \begin{align}
 {\displaystyle {\begin{array}{rll}(x)_{0}&&=1\\(x)_{1}&&=x\\(x)_{2}&=x(x-1)&=x^{2}-x\\(x)_{3}&=x(x-1)(x-2)&=x^{3}-3x^{2}+2x\\(x)_{4}&=x(x-1)(x-2)(x-3)&=x^{4}-6x^{3}+11x^{2}-6x\end{array}}}
 \end{align}
-\tag{2}
 ```
 
 The right hand sides of these equations sort of form a matrix, if you squint a bit.
@@ -90,6 +89,7 @@ So by finding the matrix of coefficients $S$ which correspond to the polynomial 
            0
     \end{bmatrix}
   \end{align}
+  \tag{2}
 ```
 
 We added a zero to the bottom of the polynomial vector and took $S(m + 1)$ because all exponents will be shifted up later (try to see why from $(1)$ ).
